@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneVerificationConfirmActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:orientation="vertical"
+            android:padding="@dimen/normal_padding">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:text="@string/phone_verification_title"
+                android:textColor="@color/pageTitle"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/captureIdTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/sms"
+                android:textColor="@color/normalText"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/enterCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:text="@string/enter_code"
+                android:textColor="@color/normalText"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                >
+
+                <com.alimuzaffar.lib.pin.PinEntryEditText
+                    android:id="@+id/txt_pin_entry1"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="32dp"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textIsSelectable="false"
+                    android:textSize="20dp"
+                    app:pinAnimationType="fromBottom"
+                    app:pinBackgroundDrawable="@drawable/bg_pin"
+                    app:pinBackgroundIsSquare="true"
+                    app:pinCharacterSpacing="4dp"
+                    app:pinTextBottomPadding="20dp"
+                    tools:ignore="SpUsage" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:padding="10dp">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/codeEt1"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/custom_edit_text"-->
+                    <!--android:padding="15dp"-->
+                    <!--android:textSize="20sp" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/codeEt2"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="wrap_content"-->
+
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:background="@drawable/custom_edit_text"-->
+                    <!--android:padding="15dp"-->
+                    <!--android:textSize="20sp" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/codeEt3"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="wrap_content"-->
+
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:background="@drawable/custom_edit_text"-->
+                    <!--android:padding="15dp"-->
+                    <!--android:textSize="20sp" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/codeEt4"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="wrap_content"-->
+
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:background="@drawable/custom_edit_text"-->
+                    <!--android:padding="15dp"-->
+                    <!--android:textSize="20sp" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/codeEt5"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="wrap_content"-->
+
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:background="@drawable/custom_edit_text"-->
+                    <!--android:padding="15dp"-->
+                    <!--android:textSize="20sp" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/codeEt6"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="wrap_content"-->
+
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:background="@drawable/custom_edit_text"-->
+                    <!--android:padding="15dp"-->
+                    <!--android:textSize="20sp" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+
+            <TextView
+                android:id="@+id/resendCodeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/resend_code"
+                android:textColor="@color/pageTitle" />
+
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/submit"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

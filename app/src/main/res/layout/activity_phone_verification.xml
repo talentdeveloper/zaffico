@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneVerificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingLeft="@dimen/normal_padding"
+        android:paddingRight="@dimen/normal_padding">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/phone_verification_title"
+            android:textColor="@color/pageTitle"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/captureIdTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/enter_phone"
+            android:textColor="@color/normalText"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/cell_no"
+            android:textColor="@color/normalText"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_countryPreference="us"
+                app:ccp_defaultNameCode="ZM"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText_carrierNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="phone"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/phoneNextBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/next"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

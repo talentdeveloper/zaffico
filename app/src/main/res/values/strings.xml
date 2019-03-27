@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Zaffico</string>
+    <string name="face_verification_title">Face Verification</string>
+    <string name="capture_face">Capture your Face Video</string>
+    <string name="remove_all"> Remove all accessories ( e.g  glasses )</string>
+    <string name="make_sure">Make sure the light is not too low or too bright</string>
+    <string name="full_name">Full Name:</string>
+    <string name="birthday">Birthday:</string>
+    <string name="birthday_hint">DD/MM/YYYY</string>
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="doc_verification_title">Document Verification</string>
+    <string name="capture_id">Capture your ID(Front Side) </string>
+    <string name="capture_id_back">Capture your ID(Back Side) </string>
+    <string name="ensure"> Ensure the text is Visible( Hold steady) </string>
+    <string name="doc_id"> Document ID: </string>
+
+    <string name="phone_verification_title">Phone Verification</string>
+    <string name="enter_phone">Enter you Phone Number </string>
+    <string name="cell_no">Cell No: </string>
+    <string name="sms">We have send you an access code via SMS for Mobile number Verification </string>
+    <string name="enter_code">Enter Code here</string>
+    <string name="resend_code">Resend Code?</string>
+
+    <string name="address_verification_title">Address Verification</string>
+    <string name="capture_bill">Capture your Utility Bill </string>
+    <string name="full_address">Full Address/Street:</string>
+    <string name="country">Country:</string>
+    <string name="city">City:</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="signature_title">Signature</string>
+    <string name="own_signature">Create you own Signature</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="intro_message">
+        <![CDATA[
+
+
+            This sample demonstrates the basic use of Camera2 API. Check the source code to see how
+            you can display camera preview and take pictures.
+
+
+        ]]>
+    </string>
+
+    <string name="choose_your_method">
+        Choose your \n Method of Verification
+    </string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_prospectus">Prospectus</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_blank_fragment">My Wallet</string>
+    <string name="money_blank_fragment">Zaffico Share\'s</string>
+    <string name="buy_with_visa">Buy with Visa Card</string>
+    <string name="buy_with_mobile">Buy with Mobile Money</string>
+    <string name="buy_with_bank">Buy with Bank Account</string>
+    <string name="terms">I agree with all terms and conditions</string>
+    <string name="click_here">Click here for terms</string>
+    <string name="first_page_message">Please make sure you have your ID or passport and utility bill before you begin</string>
+
+</resources>
